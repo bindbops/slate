@@ -317,6 +317,9 @@
                   <li>
                     <a href="#get-all-assets" class="toc-h2 toc-link" data-title="Get All Assets">Get All Assets</a>
                   </li>
+                  <li>
+                    <a href="#get-a-specific-asset" class="toc-h2 toc-link" data-title="Get A Specific Asset">Get A Specific Asset</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -398,6 +401,54 @@ You must replace <code>secret_key</code> in the examples with your personal API 
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET https://api.bindbops.com/v1/assets</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>key</td>
+<td>Your personal API key</td>
+</tr>
+</tbody></table>
+<h2 id='get-a-specific-asset'>Get A Specific Asset</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.bindbops.com/v1/assets/e35abd1e-06d0-40d6-8cae-a5f31b9bf37d?key=secret_key"</span>
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"hasLocation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5fd7ffb663f8e0000aa58a6f"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FDQ200B8V3B9"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5611128"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hvac"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"assetProperties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"net weight"</span><span class="p">:</span><span class="w"> </span><span class="s2">"89 Kg"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"assetType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"indoor split"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e45abd1e-06d0-40d6-8cae-a5f31b9bf37d"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5fd7ffb663f8e0000aa58a6f"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>This endpoint retrieves a specific asset given its UUID.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET https://api.bindbops.com/v1/assets/&lt;UUID&gt;</code></p>
+<h3 id='path-parameters'>Path Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>UUID</td>
+<td>The UUID of the asset</td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters-2'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
