@@ -48,12 +48,14 @@ curl "https://api.bindbops.com/v1/assets?key=secret_key"
     "model": "FDQ200B8V3B9",
     "sn": "5611128",
     "category": "hvac",
-    "type": "696e646f6f722073706c6974",
-    "properties": [
+    "assetProperties": [
       {
         "net weight": "89 Kg"
       }
-    ]
+    ],
+    "assetType": "indoor split",
+    "uuid": "e45abd1e-06d0-40d6-8cae-a5f31b9bf37d",
+    "id": "5fd7ffb663f8e0000aa58a6f"
   },
   {
     "hasLocation": false,
@@ -61,34 +63,19 @@ curl "https://api.bindbops.com/v1/assets?key=secret_key"
     "model": "FTX25J3V1B",
     "sn": "J021466",
     "category": "hvac",
-    "type": "696e646f6f722073706c6974",
-    "properties": [
-      {
-        "manufactured by": "Daikin"
-      }
-    ],
-    "installationProperties": [
-      {
-        "building": "Supermarket 1"
-      }
-    ]
-  },
-  {
-    "hasLocation": true,
-    "_id": "5fd861d977a026000aec4abd",
-    "model": "НP29-653-3Μ",
-    "sn": "5805F06962",
-    "category": "hvac",
-    "type": {
-      "name": "outdoor split"
-    },
     "installationProperties": [
       {
         "building": "Mall"
       }
     ],
-    "lat": 38.099768752582264,
-    "lon": 23.80085022753869
+    "assetProperties": [
+      {
+        "manufactured by": "Daikin"
+      }
+    ],
+    "assetType": "indoor split",
+    "uuid": "f797954d-8ee3-4b71-9be8-46503a8b3033",
+    "id": "5fd8004463f8e0000aa58a74"
   }
 ]
 ```
