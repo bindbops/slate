@@ -101,6 +101,50 @@ This endpoint retrieves all assets.
 
 ### Query Parameters
 
-Parameter | Description
---------- | -----------
-key | Your personal API key
+| Parameter | Description           |
+| --------- | --------------------- |
+| key       | Your personal API key |
+
+## Get A Specific Asset
+
+```shell
+curl "https://api.bindbops.com/v1/assets/e35abd1e-06d0-40d6-8cae-a5f31b9bf37d?key=secret_key"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "hasLocation": false,
+  "_id": "5fd7ffb663f8e0000aa58a6f",
+  "model": "FDQ200B8V3B9",
+  "sn": "5611128",
+  "category": "hvac",
+  "assetProperties": [
+    {
+      "net weight": "89 Kg"
+    }
+  ],
+  "assetType": "indoor split",
+  "uuid": "e45abd1e-06d0-40d6-8cae-a5f31b9bf37d",
+  "id": "5fd7ffb663f8e0000aa58a6f"
+}
+```
+
+This endpoint retrieves a specific asset given its UUID.
+
+### HTTP Request
+
+`GET https://api.bindbops.com/v1/assets/<UUID>`
+
+### Path Parameters
+
+| Parameter | Description           |
+| --------- | --------------------- |
+| UUID      | The UUID of the asset |
+
+### Query Parameters
+
+| Parameter | Description           |
+| --------- | --------------------- |
+| key       | Your personal API key |
