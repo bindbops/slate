@@ -30,7 +30,7 @@ Authentication is made using the API key generated in the settings of your accou
 You must replace <code>secret_key</code> in the examples with your personal API key.
 </aside>
 
-# Assets
+# Personal Accounts
 
 ## Get All Assets
 
